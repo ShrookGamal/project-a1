@@ -4,29 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>بيت العز لنقل الأثاث | العز في الخدمة والأمان</title>
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Main Style -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header & Navigation -->
     <header class="main-header">
         <div class="container header-container">
            <div class="logo-area">
     <div class="logo-wrapper">
         <img src="images/logo.png" alt="لوجو بيت العز" class="logo-img">
-        <div class="logo-glow"></div> <!-- تأثير إضاءة خلف اللوجو -->
+        <div class="logo-glow"></div>
     </div>
     <div class="brand-text">
         <span class="brand-name">بيت العـز</span>
         <span class="brand-slogan">لنقل الأثاث</span>
     </div>
-</div>
-
+           </div>
             <nav class="desktop-nav">
                 <ul class="nav-links">
                     <li><a href="#home" class="nav-link active">الرئيسية</a></li>
@@ -37,7 +31,6 @@
                     <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
                 </ul>
             </nav>
-
             <div class="header-actions">
                 <a href="tel:0797576908" class="btn-call hide-mobile">
                     <i class="fas fa-phone-alt"></i> اتصل الآن
@@ -50,8 +43,6 @@
             </div>
         </div>
     </header>
-
-    <!-- Side Menu for Mobile -->
     <div class="side-menu" id="side-menu">
         <div class="close-menu"><i class="fas fa-times"></i></div>
         <ul class="side-links">
@@ -69,8 +60,6 @@
         </div>
     </div>
     <div class="overlay" id="overlay"></div>
-
-    <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-bg"></div>
         <div class="container hero-content">
@@ -85,12 +74,9 @@
             </div>
         </div>
     </section>
-    <!-- About Us Section -->
-<section id="about" class="about-section">
+    <section id="about" class="about-section">
     <div class="container">
         <div class="about-wrapper">
-            
-            <!-- الجزء البصري: صور متداخلة مع أنيميشن -->
             <div class="about-visual animate-left">
                 <div class="image-stack">
                     <img src="images/img9.jpeg" alt="عمال نقل أثاث محترفين" class="img-main">
@@ -100,15 +86,12 @@
                     </div>
                 </div>
             </div>
-
-            <!-- الجزء النصي: محتوى تسويقي وSEO -->
             <div class="about-text animate-right">
                 <h3 class="sub-title">قصة بيت العز</h3>
                 <h2 class="main-title">نحن لا ننقل الأثاث فحسب، بل ننقل <span class="highlight">راحتك وأمانك</span></h2>
                 <p class="description">
                     منذ انطلاقنا في قلب المملكة الأردنية الهاشمية تحت إدارة <strong>أبو لؤي</strong>، وضعت شركة <strong>"بيت العز"</strong> معايير جديدة في عالم ترحيل العفش. نحن نؤمن أن عفشك ليس مجرد قطع أثاث، بل هو ذكرياتك الثمينة التي تستحق عناية فائقة.
                 </p>
-                
                 <div class="features-grid">
                     <div class="feature-item">
                         <i class="fas fa-check-circle"></i>
@@ -125,7 +108,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="about-stats">
                     <div class="stat-card">
                         <i class="fas fa-truck-loading"></i>
@@ -139,15 +121,12 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-</section>
-<!-- Promotional Video Section -->
-<section class="promo-video-section">
+    </section>
+    <section class="promo-video-section">
     <div class="container">
         <div class="video-wrapper">
-            <!-- الجزء النصي بجانب الفيديو -->
             <div class="video-info animate-text">
                 <h2 class="video-title">رحلة الأمان من <span class="highlight">الباب إلى الباب</span></h2>
                 <p>في هذا الفيديو، نأخذكم في جولة سريعة لنبين لكم كيف نهتم بكل تفصيلة صغيرة، من لحظة تغليف أصغر قطعة زجاج وحتى وصول أثاثكم بأمان بفضل أسطولنا الحديث.</p>
@@ -158,21 +137,12 @@
                     <div class="v-feat"><i class="fas fa-play-circle"></i> تغليف احترافي</div>
                 </div>
             </div>
-
-            <!-- إطار الفيديو المبتكر -->
             <div class="video-container animate-card-up">
-                <!-- الـ ID هنا يغطي كل محتويات الفيديو لسهولة الضغط -->
                 <div class="video-frame" id="play-video-trigger">
-    <!-- الفيديو الذي سيعمل تلقائياً كخلفية (بدون صوت لضمان التشغيل) -->
     <video autoplay muted loop playsinline class="video-preview">
         <source src="videos/vid1.mp4" type="video/mp4">
-        <!-- إذا لم يكن لديكِ فيديو MP4، يمكنك وضع رابط فيديو من الإنترنت للتجربة -->
     </video>
-
-    <!-- طبقة شفافة فوق الفيديو ليعمل الزر بشكل واضح -->
     <div class="video-overlay-layer"></div>
-
-    <!-- زر التشغيل المبتكر سيظل موجوداً لفتح الفيديو بالحجم الكامل مع الصوت -->
     <div class="play-btn-wrapper">
         <div class="play-pulse"></div>
         <div class="play-pulse delay"></div>
@@ -181,22 +151,20 @@
         </div>
     </div>
 </div>
-                <!-- شكل ديكوري خلف الفيديو -->
-                <div class="video-shape"></div>
+     <div class="video-shape"></div>
             </div>
         </div>
     </div>
-</section>
-<div class="video-modal" id="video-modal">
+    </section>
+    <div class="video-modal" id="video-modal">
     <div class="modal-content">
         <span class="close-modal">&times;</span>
         <div class="video-box">
             <iframe id="promo-iframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
     </div>
-</div>
-<!-- Services Section: Creative Layout -->
-<section id="services" class="services-modern">
+    </div>
+    <section id="services" class="services-modern">
     <div class="container">
         <div class="section-header">
             <span class="badge">خدماتنا الاحترافية</span>
@@ -205,9 +173,7 @@
                 تقدم شركة بيت العز أفضل خدمات نقل الأثاث في الأردن، حيث نجمع بين السرعة، الأمان، والاحترافية. سواء كنت تبحث عن نقل عفش في عمان، الزرقاء، إربد، أو مادبا او اي مكان في الاردن، فنحن نوفر لك أسطولاً مجهزاً وفريقاً مدرباً على أعلى مستوى لضمان تجربة نقل خالية من الإجهاد.
             </p>
         </div>
-
         <div class="services-grid-two">
-            <!-- الخدمة 1 -->
             <div class="wide-card animate-card-up">
                 <div class="card-img-wrapper">
                     <img src="images/img4.jpeg" alt="نقل أثاث منزلي بالأردن">
@@ -216,7 +182,7 @@
                 <div class="card-content">
                     <div class="card-tag">الأكثر طلباً</div>
                     <h3>نقل العفش السكني المتكامل</h3>
-                    <p>نحن متخصصون في ترحيل المنازل والفلل بأسعار تبدأ من 90 ديناراً. تشمل الخدمة الفحص المجاني والمعاينة الفورية لتحديد أنسب طريقة للنقل وحماية قطع الأثاث الغالية على قلبك.</p>
+                    <p>نحن متخصصون في ترحيل المنازل والفلل بأسعار تنافسية. تشمل الخدمة الفحص المجاني والمعاينة الفورية لتحديد أنسب طريقة للنقل وحماية قطع الأثاث الغالية على قلبك.</p>
                     <ul class="seo-list">
                         <li>نقل غرف نوم كاملة</li>
                         <li>ترحيل مطابخ وأجهزة كهربائية</li>
@@ -224,8 +190,6 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- الخدمة 2 -->
             <div class="wide-card animate-card-up">
                 <div class="card-img-wrapper">
                     <img src="images/img9.jpeg" alt="تغليف أثاث احترافي">
@@ -242,8 +206,6 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- الخدمة 3 -->
             <div class="wide-card animate-card-up">
                 <div class="card-img-wrapper">
                     <img src="images/img12.jpeg" alt="فك وتركيب غرف نوم">
@@ -260,8 +222,6 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- الخدمة 4 -->
             <div class="wide-card animate-card-up">
                 <div class="card-img-wrapper">
                     <img src="images/img2.jpeg" alt="نقل مكاتب وشركات">
@@ -280,23 +240,20 @@
             </div>
         </div>
     </div>
-</section>
-<section id="portfolio" class="portfolio-section">
+    </section>
+    <section id="portfolio" class="portfolio-section">
     <div class="container">
         <div class="section-header animate-text">
             <span class="badge">إبداعنا في العمل</span>
             <h2 class="main-title">معرض أعمال <span class="highlight">بيت العز</span></h2>
             <p class="section-desc">شاهد مقتطفات حقيقية من عمليات النقل والتغليف التي نفذناها. (مرر الماوس لمعاينة الفيديوهات)</p>
         </div>
-
         <div class="filter-controls animate-text">
             <button class="filter-btn active" data-filter="all">الكل</button>
             <button class="filter-btn" data-filter="photo">الصور</button>
             <button class="filter-btn" data-filter="video">الفيديوهات</button>
         </div>
-
         <div class="gallery-grid">
-            <!-- الفيديوهات -->
             <div class="gallery-item video animate-card-up">
                 <div class="gallery-box" data-video="videos/vid1.mp4">
                     <video muted loop playsinline class="preview-vid"><source src="videos/vid1.mp4" type="video/mp4"></video>
@@ -321,8 +278,6 @@
                     <div class="gallery-overlay"><i class="fas fa-play-circle"></i><span>تشغيل كامل</span></div>
                 </div>
             </div>
-
-            <!-- الصور (كل الصور المذكورة) -->
             <div class="gallery-item photo animate-card-up"><div class="gallery-box"><img src="images/img1.jpeg" alt="بيت العز"><div class="gallery-overlay"><i class="fas fa-search"></i></div></div></div>
             <div class="gallery-item photo animate-card-up"><div class="gallery-box"><img src="images/img2.jpeg" alt="نقل أثاث"><div class="gallery-overlay"><i class="fas fa-search"></i></div></div></div>
             <div class="gallery-item photo animate-card-up"><div class="gallery-box"><img src="images/img3.jpeg" alt="نقل أثاث"><div class="gallery-overlay"><i class="fas fa-search"></i></div></div></div>
@@ -340,26 +295,21 @@
             <div class="gallery-item photo animate-card-up"><div class="gallery-box"><img src="images/img15.avif" alt="نقل أثاث"><div class="gallery-overlay"><i class="fas fa-search"></i></div></div></div>
         </div>
     </div>
-</section>
-
-<!-- نافذة عرض الفيديو/الصور الكبيرة (Lightbox) -->
-<div class="portfolio-modal" id="portfolio-modal">
+    </section>
+    <div class="portfolio-modal" id="portfolio-modal">
     <div class="p-modal-content">
         <span class="p-close">&times;</span>
-        <div id="p-media-container"></div> <!-- هنا سيتم حقن الفيديو أو الصورة -->
+        <div id="p-media-container"></div>
     </div>
-</div>
-<!-- Why Choose Us Section -->
-<section id="why-us" class="why-us-section">
+   </div>
+   <section id="why-us" class="why-us-section">
     <div class="container">
         <div class="section-header animate-text">
             <span class="badge">سر تميزنا</span>
             <h2 class="main-title">لماذا يثق الآلاف في <span class="highlight">بيت العز؟</span></h2>
             <p class="section-desc">نحن لا نقدم مجرد خدمة نقل، نحن نقدم وعداً بالأمان وراحة البال. إليك ما يجعلنا الخيار الأول في المملكة الأردنية الهاشمية.</p>
         </div>
-
         <div class="why-grid">
-            <!-- كارت 1: الفنيين -->
             <div class="why-card animate-card-up">
                 <div class="why-icon">
                     <i class="fas fa-user-cog"></i>
@@ -368,8 +318,6 @@
                 <p>طاقم محترف متخصص في فك وتركيب غرف النوم (محلي، تركي، أجنبي)، الستائر، والمكاتب بأدوات حديثة تضمن سلامة الموبيليا.</p>
                 <div class="card-bg-icon"><i class="fas fa-user-cog"></i></div>
             </div>
-
-            <!-- كارت 2: التغليف -->
             <div class="why-card animate-card-up">
                 <div class="why-icon">
                     <i class="fas fa-box-open"></i>
@@ -378,29 +326,23 @@
                 <p>حماية فائقة باستخدام بلاستيك الفقاعات، رولت التغليف، وكراتين مخصصة للزجاج والصحون. عفشك سيوصل كأنه لم يتحرك من مكانه.</p>
                 <div class="card-bg-icon"><i class="fas fa-box-open"></i></div>
             </div>
-
-            <!-- كارت 3: الأسطول -->
             <div class="why-card animate-card-up">
                 <div class="why-icon">
                     <i class="fas fa-truck-loading"></i>
                 </div>
-                <h3>أسطول حديث ومغلق</h3>
+                <h3>أسطول سيارات حديثة ومغلقة</h3>
                 <p>نمتلك شاحنات مجهزة بالكامل ومغلقة لحماية الأثاث من الغبار، الأمطار، وعوامل الطريق، لضمان وصول نظيف وآمن 100%.</p>
                 <div class="card-bg-icon"><i class="fas fa-truck-loading"></i></div>
             </div>
-
-            <!-- كارت 4: السعر -->
             <div class="why-card animate-card-up">
                 <div class="why-icon">
                     <i class="fas fa-hand-holding-usd"></i>
                 </div>
-                <h3>أسعار تبدأ من 90 ديناراً</h3>
-                <p>نقدم أفضل كلفة نقل في الأردن لعام 2026 مع خدمة المعاينة المجانية قبل النقل لضمان شفافية السعر وعدم وجود تكاليف مخفية.</p>
+                <h3>أسعار تنافسية وعروض حصرية   </h3>
+                <p>نقدم أفضل كلفة نقل في الأردن لعام 2026 مع خدمة المعاينة قبل النقل لضمان شفافية السعر وعدم وجود تكاليف مخفية.</p>
                 <div class="card-bg-icon"><i class="fas fa-hand-holding-usd"></i></div>
             </div>
         </div>
-
-        <!-- إحصائيات سريعة (Counters) -->
         <div class="stats-row animate-text">
             <div class="stat-item">
                 <span class="stat-number" data-target="100">0</span><span class="plus">%</span>
@@ -416,9 +358,8 @@
             </div>
         </div>
     </div>
-</section>
-<!-- Contact Us Section -->
-<section id="contact" class="contact-section">
+   </section>
+   <section id="contact" class="contact-section">
     <div class="contact-bg-overlay"></div>
     <div class="container">
         <div class="section-header animate-text">
@@ -428,15 +369,12 @@
         </div>
 
         <div class="contact-grid">
-            <!-- كارت الاتصال -->
             <a href="tel:0797576908" class="contact-glass-card animate-card-up">
                 <div class="c-icon"><i class="fas fa-phone-alt"></i></div>
                 <h3>اتصل بنا الآن</h3>
                 <p>إدارة أبو لؤي في خدمتكم 24/7</p>
                 <span class="c-number">0797576908</span>
             </a>
-
-            <!-- كارت واتساب -->
             <a href="https://wa.me/962797576908" target="_blank" class="contact-glass-card animate-card-up">
                 <div class="c-icon" style="background: #25d366;"><i class="fab fa-whatsapp"></i></div>
                 <h3>تواصل عبر واتساب</h3>
@@ -445,18 +383,14 @@
             </a>
         </div>
     </div>
-</section>
-
-<!-- Footer -->
-<footer class="main-footer">
+   </section>
+   <footer class="main-footer">
     <div class="container">
         <div class="footer-grid">
-            <!-- العمود الأول -->
             <div class="footer-col">
                 <h3 class="footer-logo">بيت العز</h3>
-                <p class="footer-about">الرائدون في عالم نقل الأثاث بالأردن. نقدم خدمات احترافية بأسطول حديث وفريق عمل مدرب لضمان راحة بالك وأمان عفشك.</p>
+                <p class="footer-about">الرائدون في عالم نقل الأثاث بالأردن. نقدم خدمات احترافية بأسطول سيارات حديثة وفريق عمل مدرب لضمان راحة بالك وأمان عفشك.</p>
                     <div class="social-links">
-    <!-- أيقونة الفيسبوك بالستايل الجديد -->
     <a href="https://www.facebook.com/share/1CU1D6cHzx/" target="_blank" class="fb-icon-styled">
         <i class="fab fa-facebook-f"></i>
     </a>
@@ -503,10 +437,8 @@
             <p class="gmt-credit">تصميم وبرمجة <a href="https://www.facebook.com/share/17UzqgSwiu/" target="_blank">GMTWeb</a></p>
         </div>
     </div>
-</footer>
-
-<!-- الأزرار العائمة -->
-<div class="floating-actions">
+   </footer>
+   <div class="floating-actions">
     <a href="https://wa.me/962797576908" class="float-btn whatsapp-btn" target="_blank">
         <i class="fab fa-whatsapp"></i>
         <span class="tooltip">واتساب</span>
@@ -515,7 +447,7 @@
         <i class="fas fa-phone-alt"></i>
         <span class="tooltip">اتصل الآن</span>
     </a>
-</div>
+   </div>
     <script src="script.js"></script>
 </body>
 </html>

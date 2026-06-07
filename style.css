@@ -1,18 +1,16 @@
 :root {
-    --primary-color: #0a2351; /* أزرق ملكي */
-    --secondary-color: #d4af37; /* ذهبي */
+    --primary-color: #0a2351; 
+    --secondary-color: #d4af37; 
     --accent-color: #e67e22;
     --white: #ffffff;
     --text-color: #333;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Cairo', sans-serif;
     line-height: 1.6;
@@ -20,14 +18,11 @@ body {
     overflow-x: hidden;
     background-color: #fff;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
-/* Header & Nav */
 .main-header {
     position: fixed;
     top: 20px;
@@ -41,27 +36,23 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: var(--transition);
 }
-
 .main-header.scrolled {
     top: 0;
     width: 100%;
     border-radius: 0;
     background: rgba(255, 255, 255, 0.98);
 }
-
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
-
 .logo-area {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 .logo-img {
     width: 45px;
     height: 45px;
@@ -69,19 +60,16 @@ body {
     object-fit: cover;
     border: 2px solid var(--secondary-color);
 }
-
 .brand-name {
     font-weight: 900;
     font-size: 1.5rem;
     color: var(--primary-color);
 }
-
 .nav-links {
     display: flex;
     list-style: none;
     gap: 20px;
 }
-
 .nav-link {
     text-decoration: none;
     color: var(--primary-color);
@@ -90,12 +78,10 @@ body {
     border-radius: 20px;
     transition: var(--transition);
 }
-
 .nav-link:hover, .nav-link.active {
     background: var(--primary-color);
     color: var(--white);
 }
-
 .btn-call {
     background: var(--secondary-color);
     color: var(--white);
@@ -106,13 +92,10 @@ body {
     transition: var(--transition);
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
 }
-
 .btn-call:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
 }
-
-/* Hero Section */
 .hero-section {
     position: relative;
     height: 100vh;
@@ -123,7 +106,6 @@ body {
     color: var(--white);
     overflow: hidden;
 }
-
 .hero-bg {
     position: absolute;
     top: 0;
@@ -137,12 +119,10 @@ body {
     z-index: -1;
     animation: zoomBackground 20s infinite alternate;
 }
-
 @keyframes zoomBackground {
     0% { transform: scale(1); filter: blur(5px); }
     100% { transform: scale(1.1); filter: blur(3px); }
 }
-
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
@@ -190,15 +170,12 @@ body {
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
-
-/* Mobile Menu */
 .menu-toggle {
     display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
 }
-
 .menu-toggle span {
     width: 30px;
     height: 3px;
@@ -206,7 +183,6 @@ body {
     border-radius: 3px;
     transition: var(--transition);
 }
-
 .side-menu {
     position: fixed;
     top: 0;
@@ -220,23 +196,18 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 .side-menu.active { right: 0; }
-
 .side-links {
     list-style: none;
     margin-top: 50px;
 }
-
 .side-links li { margin-bottom: 20px; }
-
 .side-links a {
     color: var(--white);
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
 }
-
 .side-menu-footer {
     margin-top: auto;
 }
@@ -262,19 +233,13 @@ body {
     display: none;
     z-index: 1500;
 }
-
 .overlay.active { display: block; }
-
-/* Responsive */
 @media (max-width: 992px) {
     .desktop-nav, .hide-mobile { display: none; }
     .menu-toggle { display: flex; }
     .hero-content h1 { font-size: 2.2rem; }
 }
-
-/* SEO Friendly & Smooth Scroll */
 html { scroll-behavior: smooth; }
-/* About Section Styles */
 .about-section {
     padding: 100px 0;
     background: #fdfdfd;
@@ -287,8 +252,6 @@ html { scroll-behavior: smooth; }
     gap: 60px;
     align-items: center;
 }
-
-/* التنسيق البصري للصور */
 .about-visual {
     position: relative;
 }
@@ -330,8 +293,6 @@ html { scroll-behavior: smooth; }
     font-weight: 900;
     color: var(--secondary-color);
 }
-
-/* التنسيق النصي */
 .sub-title {
     color: var(--secondary-color);
     font-weight: 700;
@@ -368,8 +329,6 @@ html { scroll-behavior: smooth; }
     margin-bottom: 30px;
     text-align: justify;
 }
-
-/* ميزات بيت العز */
 .features-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -394,8 +353,6 @@ html { scroll-behavior: smooth; }
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
-
-/* الإحصائيات */
 .about-stats {
     display: flex;
     gap: 30px;
@@ -426,8 +383,6 @@ html { scroll-behavior: smooth; }
     font-size: 1.8rem;
     color: var(--primary-color);
 }
-
-/* Responsive About */
 @media (max-width: 992px) {
     .about-wrapper {
         grid-template-columns: 1fr;
@@ -445,7 +400,6 @@ html { scroll-behavior: smooth; }
         align-items: center;
     }
 }
-/* تصميم منطقة اللوجو والاسم */
 .logo-area {
     display: flex;
     align-items: center;
@@ -463,15 +417,13 @@ html { scroll-behavior: smooth; }
 .logo-img {
     width: 55px;
     height: 55px;
-    border-radius: 12px; /* زوايا منحنية عصرية بدل الدائرة الكاملة */
+    border-radius: 12px; 
     object-fit: cover;
     border: 2px solid var(--secondary-color);
     z-index: 2;
     background: #fff;
     transition: var(--transition);
 }
-
-/* تأثير وهج خلف اللوجو */
 .logo-glow {
     position: absolute;
     width: 40px;
@@ -481,7 +433,6 @@ html { scroll-behavior: smooth; }
     opacity: 0.4;
     z-index: 1;
 }
-
 .brand-text {
     display: flex;
     flex-direction: column;
@@ -493,7 +444,6 @@ html { scroll-behavior: smooth; }
     font-size: 1.8rem;
     font-weight: 900;
     letter-spacing: -1px;
-    /* تأثير النص الذهبي المتدرج */
     background: linear-gradient(to bottom, #d4af37 0%, #f2d06b 50%, #d4af37 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -514,8 +464,6 @@ html { scroll-behavior: smooth; }
     align-items: center;
     gap: 5px;
 }
-
-/* إضافة خط صغير بجانب كلمة لنقل الأثاث ليعطي شكلاً احترافياً */
 .brand-slogan::after {
     content: '';
     width: 20px;
@@ -523,8 +471,6 @@ html { scroll-behavior: smooth; }
     background: var(--secondary-color);
     display: inline-block;
 }
-
-/* انيميشن عند تمرير الماوس على اللوجو */
 .logo-area:hover .logo-img {
     transform: rotate(-5deg) scale(1.1);
 }
@@ -533,24 +479,19 @@ html { scroll-behavior: smooth; }
     filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.5));
     transition: 0.3s;
 }
-
-/* تحسين الموبايل */
 @media (max-width: 480px) {
     .brand-name { font-size: 1.4rem; }
     .brand-slogan { font-size: 0.7rem; letter-spacing: 1px; }
     .logo-img { width: 45px; height: 45px; }
 }
-/* ستايل سكشن الخدمات المطور */
 .services-modern {
     padding: 100px 0;
-    background: #f4f7f6; /* لون هادئ وجديد */
+    background: #f4f7f6; 
 }
-
 .section-header {
     text-align: center;
     margin-bottom: 70px;
 }
-
 .badge {
     background: var(--secondary-color);
     color: white;
@@ -559,7 +500,6 @@ html { scroll-behavior: smooth; }
     font-size: 0.9rem;
     font-weight: 700;
 }
-
 .seo-text {
     max-width: 900px;
     margin: 20px auto;
@@ -567,11 +507,9 @@ html { scroll-behavior: smooth; }
     color: #555;
     line-height: 1.8;
 }
-
-/* نظام الشبكة: 2 كارد في السطر */
 .services-grid-two {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* هذا يجعلها 2 في السطر */
+    grid-template-columns: 1fr 1fr; 
     gap: 40px;
 }
 
@@ -580,7 +518,7 @@ html { scroll-behavior: smooth; }
     border-radius: 25px;
     overflow: hidden;
     display: flex;
-    flex-direction: column; /* للتحويل في الموبايل */
+    flex-direction: column; 
     box-shadow: 0 15px 40px rgba(0,0,0,0.05);
     transition: all 0.5s ease;
     border: 1px solid rgba(0,0,0,0.03);
@@ -590,8 +528,6 @@ html { scroll-behavior: smooth; }
     transform: translateY(-10px);
     box-shadow: 0 25px 50px rgba(10, 35, 81, 0.15);
 }
-
-/* الجزء العلوي للصورة */
 .card-img-wrapper {
     position: relative;
     height: 250px;
@@ -617,8 +553,6 @@ html { scroll-behavior: smooth; }
     height: 100%;
     background: linear-gradient(to top, rgba(10, 35, 81, 0.6), transparent);
 }
-
-/* محتوى الكارت */
 .card-content {
     padding: 30px;
     position: relative;
@@ -650,8 +584,6 @@ html { scroll-behavior: smooth; }
     margin-bottom: 20px;
     line-height: 1.7;
 }
-
-/* قائمة الـ SEO داخل الكارت */
 .seo-list {
     list-style: none;
     display: grid;
@@ -674,37 +606,30 @@ html { scroll-behavior: smooth; }
     content: '✦';
     color: var(--secondary-color);
 }
-
-/* Responsive */
 @media (max-width: 992px) {
     .services-grid-two {
-        grid-template-columns: 1fr; /* سطر واحد في الموبايل */
+        grid-template-columns: 1fr; 
     }
     .main-title { font-size: 2rem; }
 }
-/* الحالة الابتدائية للكروت (مخفية) */
 .animate-card-up {
     opacity: 0;
-    transform: translateY(60px) scale(0.9); /* تبدأ صغيرة ومن أسفل */
+    transform: translateY(60px) scale(0.9); 
     transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    visibility: visible; /* نضمن أنها ليست مخفية كلياً من المتصفح */
+    visibility: visible; 
 }
-
-/* الحالة عند الظهور (تصبح مرئية) */
 .animate-card-up.is-visible {
     opacity: 1 !important;
     transform: translateY(0) scale(1) !important;
 }
 
-/* تأخير بسيط لكل كارت ليعطي شكل تتابعي جذاب */
 .services-grid-two .wide-card:nth-child(1) { transition-delay: 0.1s; }
 .services-grid-two .wide-card:nth-child(2) { transition-delay: 0.2s; }
 .services-grid-two .wide-card:nth-child(3) { transition-delay: 0.3s; }
 .services-grid-two .wide-card:nth-child(4) { transition-delay: 0.4s; }
-/* Promo Video Section */
 .promo-video-section {
     padding: 120px 0;
-    background: #0a2351; /* لون النيفي العميق */
+    background: #0a2351; 
     color: white;
     position: relative;
     overflow: hidden;
@@ -745,8 +670,6 @@ html { scroll-behavior: smooth; }
     align-items: center;
     gap: 8px;
 }
-
-/* تصميم إطار الفيديو */
 .video-container {
     position: relative;
     z-index: 2;
@@ -772,8 +695,6 @@ html { scroll-behavior: smooth; }
     transform: scale(1.05);
     filter: brightness(0.7);
 }
-
-/* زر التشغيل المتحرك */
 .play-btn-wrapper {
     position: absolute;
     top: 50%;
@@ -814,8 +735,6 @@ html { scroll-behavior: smooth; }
     0% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
     100% { transform: translate(-50%, -50%) scale(2.5); opacity: 0; }
 }
-
-/* مودال الفيديو (النافذة المنبثقة) */
 .video-modal {
     position: fixed;
     top: 0;
@@ -846,7 +765,7 @@ html { scroll-behavior: smooth; }
 
 .video-box {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%; 
     height: 0;
 }
 
@@ -858,8 +777,6 @@ html { scroll-behavior: smooth; }
     height: 100%;
     border-radius: 15px;
 }
-
-/* استجابة الموبايل */
 @media (max-width: 992px) {
     .video-wrapper { grid-template-columns: 1fr; text-align: center; }
     .video-features { justify-content: center; flex-wrap: wrap; }
@@ -867,14 +784,14 @@ html { scroll-behavior: smooth; }
 }
 .video-preview {
     width: 100%;
-    height: 400px; /* نفس ارتفاع الصورة السابق */
-    object-fit: cover; /* لضمان ملء الإطار دون تمطيط */
+    height: 400px; 
+    object-fit: cover; 
     display: block;
     transition: transform 0.8s ease;
 }
 
 .video-frame:hover .video-preview {
-    transform: scale(1.1); /* تأثير زووم خفيف عند تمرير الماوس */
+    transform: scale(1.1);
 }
 
 .video-overlay-layer {
@@ -883,24 +800,21 @@ html { scroll-behavior: smooth; }
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(10, 35, 81, 0.3); /* طبقة زرقاء خفيفة جداً لتناسق الألوان */
+    background: rgba(10, 35, 81, 0.3); 
     z-index: 1;
 }
-
-/* تأكدي أن أزرار التشغيل فوق الفيديو والطبقة الشفافة */
 .play-btn-wrapper {
     z-index: 2;
 }
 
 @media (max-width: 992px) {
     .video-preview {
-        height: 250px; /* ارتفاع أصغر للموبايل */
+        height: 250px; 
     }
 }
-/* Portfolio Section Styling */
 .portfolio-section {
     padding: 100px 0;
-    background: #050a18; /* خلفية داكنة جداً وفخمة */
+    background: #050a18; 
     color: white;
 }
 
@@ -927,8 +841,6 @@ html { scroll-behavior: smooth; }
     border-color: var(--secondary-color);
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
 }
-
-/* شبكة المعرض */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -955,8 +867,6 @@ html { scroll-behavior: smooth; }
     object-fit: cover;
     transition: 0.8s;
 }
-
-/* طبقة التأثير عند الوقوف بالماوس */
 .gallery-overlay {
     position: absolute;
     top: 0;
@@ -986,8 +896,6 @@ html { scroll-behavior: smooth; }
 .gallery-item:hover img, .gallery-item:hover video {
     transform: scale(1.1);
 }
-
-/* تأثيرات الفلترة */
 .gallery-item.hide {
     display: none;
 }
@@ -1002,12 +910,11 @@ html { scroll-behavior: smooth; }
 }
 
 @media (max-width: 768px) {
-    .gallery-grid { grid-template-columns: 1fr 1fr; } /* 2 في السطر للموبايل */
+    .gallery-grid { grid-template-columns: 1fr 1fr; } 
 }
 .gallery-item video {
-    pointer-events: none; /* عشان الضغط يوصل للـ gallery-box اللي شايله */
+    pointer-events: none; 
 }
-
 .portfolio-modal {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -1026,16 +933,13 @@ html { scroll-behavior: smooth; }
 #p-media-container video, #p-media-container img {
     width: 100%; border-radius: 15px; box-shadow: 0 0 30px rgba(212,175,55,0.3);
 }
-/* Why Us Section Styles */
 .why-us-section {
     padding: 120px 0;
-    background: radial-gradient(circle at top right, #0a2351, #050a18); /* تدرج شعاعي فخم */
+    background: radial-gradient(circle at top right, #0a2351, #050a18); 
     color: white;
     position: relative;
     overflow: hidden;
 }
-
-/* إضافة أشكال هندسية في الخلفية */
 .why-us-section::after {
     content: '';
     position: absolute;
@@ -1051,8 +955,6 @@ html { scroll-behavior: smooth; }
     gap: 30px;
     margin-bottom: 80px;
 }
-
-/* ستايل الكارت الزجاجي */
 .why-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(15px);
@@ -1100,8 +1002,6 @@ html { scroll-behavior: smooth; }
     z-index: 2;
     position: relative;
 }
-
-/* أيقونة شفافة كبيرة في خلفية الكارت */
 .card-bg-icon {
     position: absolute;
     bottom: -20px; right: -20px;
@@ -1115,8 +1015,6 @@ html { scroll-behavior: smooth; }
     color: rgba(212, 175, 55, 0.05);
     transform: rotate(0deg) scale(1.1);
 }
-
-/* ستايل الأرقام (Stats) */
 .stats-row {
     display: flex;
     justify-content: space-around;
@@ -1152,14 +1050,13 @@ html { scroll-behavior: smooth; }
     .stats-row { flex-direction: column; gap: 40px; }
     .main-title { font-size: 2.2rem; }
 }
-/* Contact Us Section */
 .contact-section {
     padding: 100px 0;
     position: relative;
     background: url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=2069');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* تأثير Parallax */
+    background-attachment: fixed; 
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -1169,7 +1066,7 @@ html { scroll-behavior: smooth; }
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
     background: rgba(10, 35, 81, 0.85);
-    backdrop-filter: blur(8px); /* بلور للخلفية كاملة */
+    backdrop-filter: blur(8px); 
 }
 
 .contact-grid {
@@ -1214,8 +1111,6 @@ html { scroll-behavior: smooth; }
     font-weight: 800;
     color: var(--secondary-color);
 }
-
-/* Footer Styling */
 .main-footer {
     background: #050a18;
     color: white;
@@ -1277,8 +1172,6 @@ html { scroll-behavior: smooth; }
     text-decoration: none;
     font-weight: 700;
 }
-
-/* Floating Action Buttons */
 .floating-actions {
     position: fixed;
     bottom: 30px;
@@ -1332,7 +1225,6 @@ html { scroll-behavior: smooth; }
     .footer-col h4::after { right: 50%; transform: translateX(50%); }
     .footer-contact li { justify-content: center; }
 }
-/* ستايل أيقونة الفيسبوك المطور */
 .social-links {
     display: flex;
     gap: 20px;
@@ -1340,32 +1232,28 @@ html { scroll-behavior: smooth; }
 }
 
 .fb-icon-styled {
-    width: 60px; /* حجم الدائرة */
+    width: 60px; 
     height: 60px;
-    background: rgba(255, 255, 255, 0.05); /* خلفية شفافة بسيطة */
-    border: 2px solid var(--secondary-color); /* إطار ذهبي */
+    background: rgba(255, 255, 255, 0.05); 
+    border: 2px solid var(--secondary-color); 
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--secondary-color); /* لون الأيقونة ذهبي */
-    font-size: 1.8rem; /* تكبير حجم الأيقونة نفسه */
+    color: var(--secondary-color); 
+    font-size: 1.8rem; 
     text-decoration: none;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* أنيميشن مرن */
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.2);
     position: relative;
     z-index: 1;
 }
-
-/* التأثير عند وقوف الماوس (Hover) */
 .fb-icon-styled:hover {
-    background: var(--secondary-color); /* تتحول للخلفية الذهبية */
-    color: #fff; /* الأيقونة تبقى بيضاء */
-    transform: translateY(-10px) rotate(360deg); /* تطلع لفوق وتلف دورة كاملة */
-    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.5); /* توهج ذهبي قوي */
+    background: var(--secondary-color); 
+    color: #fff; 
+    transform: translateY(-10px) rotate(360deg); 
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.5); 
 }
-
-/* إضافة لمسة خفيفة للأيقونة (توهج داخلي) */
 .fb-icon-styled::before {
     content: '';
     position: absolute;
